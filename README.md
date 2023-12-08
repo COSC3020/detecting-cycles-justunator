@@ -15,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The worst-case would be $\Theta(V + E)$ as my first loop to check if a node connects to itself would, under worst-case of will run $V$ times through all edges, $E$. For the actual searching for proper cycles, it will also take $V + E$ time has I am using a modified version of my depth-first-search algorithm which has a worst case of $V + E$
+
+Overall it would be $\Theta(2(V + E))$ or just $\Theta(V + E)$ removing constants
